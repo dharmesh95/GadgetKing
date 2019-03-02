@@ -1,0 +1,87 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h2>Please signup to continue</h2>
+        <form method="POST">
+            <fieldset>
+                <legend>Please enter your personal details</legend>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" required autofocus pattern="[A-Za-z]*" placeholder="First Name">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" required pattern="[A-Za-z]*" placeholder="Last Name">
+                <br/>
+                <br/>
+                <label for="date">Date of birth</label>
+                <input type="date" name="date" id="date" required>
+                <br/>
+                <br/>
+                Address: <textarea rows="4" cols="50" name="address" id="address" placeholder="Please enter your address here" required></textarea>
+                <br/><p></p>
+                <span>Gender</span><br/>
+                <label for="male">Male</label>
+                <input type="radio" id="male" value="gender" name="gender">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="female">Female</label>
+                <input type="radio" id="female" value="gender" name="gender">
+            </fieldset>
+            <fieldset>
+                <legend>Please enter your login details</legend>
+                <label for="email">EmailId:  &nbsp;</label>
+                <input type="email" name="email" id="email" required placeholder="enter your email Id">
+                <br/><br/>
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" required placeholder="enter your password"  
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="password must contain atleast one lower case, one uppercase, one digit and minimum of 8 characters">
+            </fieldset>
+            <br/>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="5">Which of the services are you most interested in?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>
+                            <label for="mobile">Mobiles
+                            <input type="checkbox" id="mobile" name="mobile" value="mobile">
+                            <img src="./sign-up-images/mobiles.png" height="150" width="200">
+                            </label>
+                        </td>
+                        <td>
+                            <label for="laptops">Laptops
+                            <input type="checkbox" id="laptops" name="laptops" value="laptops">
+                            <img src="./sign-up-images/laptops.jpg" height="150" width="200">
+                            </label>
+                        </td>
+                        <td>
+                            <label for="tablets">Tablets
+                            <input type="checkbox" id="tablets" name="tablets" value="tablets">
+                            <img src="./sign-up-images/tablets.jpg" height="150" width="200">
+                            </label>
+                        </td>
+                        <td>
+                            <label for="cameras">Cameras
+                            <input type="checkbox" id="cameras" name="cameras" value="cameras">
+                            <img src="./sign-up-images/cameras.png" height="150" width="200">
+                            </label>
+                        </td>
+                        <td>
+                            <label for="tvs">TVs
+                            <input type="checkbox" id="tvs" name="tvs" value="tvs">
+                            <img src="./sign-up-images/tvs.jpg" height="150" width="200">
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/>
+            <input type="submit" value="Sign up" formaction="./../home-page/home.html">
+            <a href="./../index.html">Back</a>
+        </form>
+    </body>
+</html>

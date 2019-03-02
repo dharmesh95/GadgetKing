@@ -1,0 +1,61 @@
+<html>
+    <head>
+    </head>
+    <body>
+            <h1>Welcome to Gadget King</h1><hr>
+            <h2>Please login to continue</h2>
+            <form name="loginForm" method="post">
+            <fieldset>
+                <legend>Please enter your Email - Id: 
+                </legend>
+                <label for="email">EmailId:  &nbsp;</label>
+                <input type="email" name="email" id="email" required autofocus placeholder="enter your email Id">
+            </fieldset>
+            <fieldset>
+                <legend>Please enter your password</legend>
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" required placeholder="enter your password" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="password must contain atleast one lower case, one uppercase, one digit and minimum of 8 characters">
+            </fieldset>
+            <br/>
+            <input type="submit" value="Login" formaction="./home-page/home.html">
+            </form>
+            <h3>Don't have an account.<i> Please <a href="./sign-up/sign-up.html">Click here</a> </i></h3>
+            <hr>
+            <h2>News for today</h2>
+            <marquee direction="up" height="32%" scrollamount="3">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><img src="./index-images/note9.jpg" width="300" height="200"></td>
+                            <td><b>Galaxy Note 9 DEAL:</b> This samsung phablet just got more affordable<br/><br/>
+                                <a href="http://wwww.amazon.com">Amazon</a> is throwing a free <a href = "https://www.gsmarena.com/samsung_galaxy_tab_a_10_1_(2016)-8090.php">Samsung galaxy tab A </a>tablet with every note 9 purchase                         
+                            </td>
+                            <td><img src="./index-images/pixel.jpg" width="300" height="150"></td>
+                            <td><b>Google </b>reportedly launching <i>Pixel 3 Lite </i>and <i>Pixel watch</i> later this year                         
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="./index-images/dell.jpg" width="300" height="200"></td>
+                            <td>Discount on Dell <b>Inspiron 15 7000 2-in-1</b> upto 50%. <a href="http://www.dell.com">Buy Today</a> </td>
+                            <td><img src="./index-images/macbook.jpg" width="300" height="200"></td>
+                            <td>These Apple killers knock upto 30% off current 15 inch MacBook Pro</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./index-images/ipad.jpg" width="300" height="300"></td>
+                            <td><b>Apple</b> march event reveal 2019 iPad  - A couple of iPads, including an iPad mini are on their way</td>
+                            <td><img src="./index-images/samsungTab.png" width="300" height="300"></td>
+                            <td>The new Samsung tab S4 is slim, sleek, premium</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./index-images/tv.jpg" width="300" height="150"></td>
+                            <td><b>Samsung </b>OLED TVs takes on OLED with bigger screens than ever in CES 2019</td>
+                            <td><img src="./index-images/lgTv.jpg" width="200" height="150"></td>
+                            <td><b>Lg </b>OLED TVs : 8k, 4k, rollable 4k OLED Panel with highest resolution comming soon.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </marquee>
+    </body>
+</html>
